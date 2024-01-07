@@ -39,8 +39,16 @@ body {
     margin-top: 50px;
 }
 
-.reset-score-btn {
+.reset-score-btn{
     background-color: #fff;
+}
+
+.auto-play-button{
+    background-color: green;
+}
+
+.reset-score-btn,
+.auto-play-button {
     color: #000;
     text-align: center;
     border: none;
@@ -50,4 +58,17 @@ body {
     line-height: normal;
     border-radius: 6px;
     cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.reset-score-btn:hover{
+    background-color: red;
+    color: #fff;
+}
+
+.auto-play-button:hover{
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
 }

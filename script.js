@@ -9,6 +9,26 @@ const score = JSON.parse(localStorage.getItem('score')) || { wins: 0, losses: 0,
         //     };
         // }
 
+        let isAutoPlaying = false;
+        let intervalId;
+
+        function toggleAutoPlay() {
+            if (!isAutoPlaying) {
+                intervalId = setInterval(function () {
+                    const playerMove = pickComputerMove();
+                    playGame(playerMove)
+                }, 1000);
+                isAutoPlaying = true;
+                document.getElementById('autoPlayButton').innerText = 'Stop Autoplay';
+                document.getElementById('autoPlayButton').style.backgroundColor = 'red';
+            } else {
+                clearInterval(intervalId);
+                isAutoPlaying = false;
+                document.getElementById('autoPlayButton').innerText = 'Auto Play';
+                document.getElementById('autoPlayButton').style.backgroundColor = 'green';
+            }
+        }
+
 
         function playGame(playerMove) {
             const computerMove = pickComputerMove();
