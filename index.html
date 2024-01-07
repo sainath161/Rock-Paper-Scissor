@@ -5,19 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <p class="title">Rock Paper Scissors</p>
-    <button class="move-button" onclick="
-    playGame('Rock');"><img src="./Assets//rock-emoji.png" class="move-icon" alt=""></button>
+    <button class="move-button js-rock-button"><img src="./Assets//rock-emoji.png" class="move-icon" alt=""></button>
 
-    <button class="move-button" onclick="
-    playGame('Paper');"><img src="./Assets/paper-emoji.png" class="move-icon" alt=""></button>
+    <button class="move-button js-paper-button"><img src="./Assets/paper-emoji.png" class="move-icon" alt=""></button>
 
-    <button class="move-button" onclick="
-    playGame('Scissors');"><img src="./Assets/scissors-emoji.png" class="move-icon" alt=""></button>
+    <button class="move-button js-scissors-button"><img src="./Assets/scissors-emoji.png" class="move-icon" alt=""></button>
 
     <p class="js-result result"></p>
 
@@ -31,6 +29,13 @@
         Score</button>
 
         <button id="autoPlayButton" class="auto-play-button" onclick="toggleAutoPlay()">Auto Play</button>
+
+        <p class="para">You Can use 👇</p>
+        <div class="keyboard">
+            <p class="para1"><span>r</span> for Rock</p>
+            <p class="para1"><span>p</span> for Paper</p>
+            <p class="para1"><span>s</span> for Scissors</p>
+        </div>
 
     <script src="./script.js"></script>
 </body>
