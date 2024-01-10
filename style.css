@@ -80,6 +80,18 @@ body {
     font-weight: bold;
 }
 
+.move{
+    font-weight: 800;
+    font-size: 24px;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: orangered;
+}
+
+.js-moves{
+    word-spacing: 5px;
+}
+
 .keyboard{
     display: flex;
     position: relative;
@@ -88,7 +100,7 @@ body {
     gap: 2%;
 }
 
-span{
+.letter{
     font-family: Arial, sans-serif;
     font-size: 32px;
     color: cadetblue;

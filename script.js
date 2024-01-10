@@ -106,7 +106,9 @@ const score = JSON.parse(localStorage.getItem('score')) || { wins: 0, losses: 0,
 
             document.querySelector('.js-result').innerHTML = result;
 
-            document.querySelector('.js-moves').innerHTML = `You<img src="./Assets/${playerMove}-emoji.png" class="move-icon"> <img src="./Assets/${computerMove}-emoji.png" class="move-icon">Computer`;
+            document.querySelector('.js-moves').innerHTML = `You <span class = "move" > ${playerMove} - ${computerMove} </span> Computer`;
+
+            // document.querySelector('.js-moves').innerHTML = `You<img src="./Assets/${playerMove}-emoji.png" class="move-icon"> <img src="./Assets/${computerMove}-emoji.png" class="move-icon">Computer`;
         }
         // Update the display of results and scores
         function updateScoreElement() {
