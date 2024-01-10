@@ -36,11 +36,6 @@ body {
     border-color: chocolate;
 }
 
-img:hover{
-    transform: scale(1.3);
-    transition: 0.3s ease-in-out all;
-}
-
 .result {
     font-size: 25px;
     font-weight: bold;
